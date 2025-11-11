@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>NES Emulator</title>
+  <script src="https://cdn.emulatorjs.org/emulator.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #emulator {
+      width: 800px;
+      height: 600px;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="emulator"></div>
+
+  <script>
+    EmulatorJS({
+      system: "nes",
+      romUrl: "game.sfc"
+    });
+  </script>
+</body>
+</html>
